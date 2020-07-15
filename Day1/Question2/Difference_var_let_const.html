@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Difference between var let const</title>
+</head>
+<body>
+  
+    <script>
+    // *****An example of trying to redeclare a let variable:
+    // In editor:
+    let points = 50;
+    let points = 60;
+    // In the console I get an error:
+    //Uncaught SyntaxError: Identifier 'points' has already been declared
+    
+    //** scope of let***
+    let points = 50;
+    let winner = false;
+    if(points > 40) {
+      let winner = true;
+    }
+    // If I call:
+     winner
+    // It returns the first value: 
+    //false
+
+    //*** difference between let and const
+    // If I define the const variable:
+      const key = 'xyz123';
+     // Then try to redeclare it:
+       key = 'xyz1234'
+      // I get the following error:
+      //Uncaught TypeError: Assignment to constant variable.
+
+//****The advantages of using let vs. var in a for loop*****
+
+      // Running a for loop with var:
+for(var i = 0; i < 10; i++){
+    console.log(i);
+}
+// Returns 0 through 9 in the console, but if I call:
+i
+// It returns:
+//10
+
+    </script>
+    </body>
+</html>
