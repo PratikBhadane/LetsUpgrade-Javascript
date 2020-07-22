@@ -2,7 +2,7 @@
 console.log('hello');
 const name=prompt('Enter your name',' anonymous');
 
-title.innerText+=name;
+title.innerText+=" welcome "+name;
 const dmode=document.getElementById('dark');
 dmode.onclick=function changeColor()
 {
