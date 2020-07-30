@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+   <script src='stopwatch.js'>
+    </script> 
+    <link rel='stylesheet' href='stopwatch.css'/>
+	<meta charset="UTF-8">
+
+	<title>Stopwatch</title>
+
+</head>
+
+<body onload="show();">
+
+    <div id='first'>
+	<div><h1>Time: <span id="time"></span></h1></div>
+
+	<input id='green' class='button' type="button" value="start" onclick="start();">
+
+	<input id='red' class='button' type="button" value="stop" onclick="stop();">
+
+	<input id='yellow' class='button' type="button" value="reset" onclick="reset()">
+    </div>
+</body>
+
+</html>
